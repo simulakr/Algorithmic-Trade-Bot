@@ -10,7 +10,7 @@ MEXC_API_SECRET = os.getenv("MEXC_API_SECRET")
 MEXC_BASE_URL = "https://contract.mexc.com"
 
 # Sembol ve Zaman Aralığı Ayarları
-SYMBOLS = ["SUI_USDT", "1000PEPE_USDT", "SOL_USDT"]  # MEXC Futures formatında
+SYMBOLS = ["SUI_USDT", "PEPE_USDT", "SOL_USDT"]  # MEXC Futures formatında
 INTERVAL = "Min15"  # MEXC formatında (Min1, Min5, Min15, Min30, Hour1, Hour4, Day1)
 
 # Sembol bazlı ATR aralıkları (MEXC sembol formatına göre güncellendi)
@@ -26,7 +26,7 @@ ROUND_NUMBERS = {
     'ETH_USDT': 2,
     'BNB_USDT': 2,
     'SOL_USDT': 1,
-    '1000PEPE_USDT': -2,
+    'PEPE_USDT': -5,
     'ARB_USDT': 1,
     'SUI_USDT': -1,
     'DOGE_USDT': 0,
@@ -39,7 +39,7 @@ TP_ROUND_NUMBERS = {
     'ETH_USDT': 2,
     'BNB_USDT': 2,
     'SOL_USDT': 3,
-    '1000PEPE_USDT': 7,
+    'PEPE_USDT': 10,
     'ARB_USDT': 4,
     'SUI_USDT': 5,
     'DOGE_USDT': 5,
